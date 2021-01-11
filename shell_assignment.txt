@@ -1,0 +1,17 @@
+1.1 I see a list of all the folders in the directory, and all the pdf documents I have saved in that folder too, but not the files saved inside the folders.
+
+1.2 ls -lrS Now I see far more information about each of the files, including the date and time when they were created (or last modified, I'm not sure). I also see numbers which I assume are their size, a bunch of letters I don't understand and another column of numbers which (this is a guess) shows how many files are inside that file/folder.
+
+1.2b oops I already did that above 
+
+2.1 pwd -> print working directory, /Users/annie/Desktop/Data Analysis, all black, files have their extensions printed and folders don't 
+
+2.2 cd -> change directory, pwd = /User/Annie/Desktop/Data Analysis, cd .. goes to the directory above (desktop), cd - , cd shell_magic
+
+ 
+
+
+
+
+
+ 
