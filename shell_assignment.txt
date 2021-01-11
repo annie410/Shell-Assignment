@@ -23,7 +23,54 @@
 
 4.2 man --> write arguments to the standard output, echo "file contents" > file.txt, echo "more contents">>file.txt, cat ./file.txt
 
-4.3 
+4.3 ls -R ~/Desktop > home_contents.list, when viewing a file that has a lot of contents 
+
+5.1 wc --> word count, 8715 (lines)  12764 (words)  198034 (characters), 
+cat ./home_contents.list | wc, 
+the numbers are the same. The difference is that the computer is first executing the cat command but not printing the results, before executing the wc command. 
+ls ./ |wc
+
+5.2 echo -e "hello world" \n "world hello" > helloworld.txt, 
+grep world ./helloworld.txt, 
+hello world 
+world hello
+
+echo "world hello" > worldhello.txt, 
+
+grep world ./helloworld.txt ./worldhello.txt
+./helloworld.txt:hello world 
+./helloworld.txt:world hello
+./worldhello.txt:world hello
+
+grep hello ./helloworld.txt
+
+cat ./helloworld.txt |grep world|wc|less
+
+6.2
+My Mac did it automatically for me when I downloaded the file manually, but I suppose it would be tar -x ./aup.tar.gz |gunzip -c 
+
+find ./aup
+
+At most 4 levels deep e.g.: ./aup/cohort1/s045fint/s045fint4.aup
+
+less ./aup/cohort1/s045fint/s045fint4.aup
+
+find ./aup  -print | wc -l ; 1381 files
+
+curl https://en.wikipedia.org/wiki/List_of_number-one_songs_in_Norway | grep -E
+
+find ./aup |grep -E "cohort3" | less
+
+find ./aup -print |grep -E "cohort3" | wc -l ; 455 files
+
+find ./aup -print |grep -E "cohort1[ˆ\.5]" | wc -l ; 450 files
+
+find ./aup -print |grep -E "cohort2/s...[mf]ssc" | wc -l ; 119
+
+find ./aup |grep -E "cohort2/s...[mf]ssc" | cat > ./ssc_cohort2.list
+
+
+
 
  
 
