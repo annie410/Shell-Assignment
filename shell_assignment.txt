@@ -8,6 +8,23 @@
 
 2.2 cd -> change directory, pwd = /User/Annie/Desktop/Data Analysis, cd .. goes to the directory above (desktop), cd - , cd shell_magic
 
+
+3.1 it created two separate files, one called hello and the other called world, implying spaces aren't good in file names
+
+3.2 mkdir -> make directory
+
+3.3 mv -> move, touch hello_world didn't work because there is already a folder called hello_world in the working directory, touch hello_world.bfe, touch hello_world.bfe hello_world.txt, mv hello_world.txt ./hello_world, mv ./hello_world ., mv ../hello_wrold.txt ./, ./hello_world.txt ../
+
+3.4 copying creates a second file in the new location whereas moving puts the original file in a new place, ../hello_world.txt ./, ../hello_world.txt ./world_hello.txt
+
+3.5 rm --> remove, pwd, cd .., rm ./hello_world.txt, hello_world is a directory, rm -r ./hello_world
+
+4.1 cat --> concentrate and print, nothing, because the file is empty
+
+4.2 man --> write arguments to the standard output, echo "file contents" > file.txt, echo "more contents">>file.txt, cat ./file.txt
+
+4.3 
+
  
 
 
